@@ -1,0 +1,202 @@
+/* Custom CSS */
+
+/* Global styles */
+:root {
+    /* Color Variables */
+    --color-primary: #b3a2bb;
+    --color-primary-hover: #bbdccf;
+    --color-primary-border: #baa891;
+    --color-text: #333;
+    --color-bg: #f8f9fa;
+    --color-overlay: rgba(0, 0, 0, 0.7);
+    --color-overlay-hover: rgba(0, 0, 0, 1);
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Navigation Bar */
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    color: var(--color-text);
+  }
+  
+  /* About section */
+  .jumbotron {
+    padding: 40px;
+    background-color: var(--color-bg);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Projects section */
+  #projects h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .card {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .hidden-card {
+    display: none;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    height: 200px; /* Adjust the desired height */
+    object-fit: cover;
+  }
+  
+  .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: var(--color-overlay);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .card-overlay:hover {
+    opacity: 1;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary-border);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--color-primary-hover);
+    border-color: var(--color-primary-border);
+  }
+  
+  #prevButton{
+    background-color: var(--color-primary);
+    border-color: var(--color-primary-border);
+  }
+  #nextButton{
+    background-color: var(--color-primary);
+    border-color: var(--color-primary-border);
+}
+
+  #prevButton:hover{
+    background-color: var(--color-primary-hover);
+    border-color: var(--color-primary-border);
+}
+  #nextButton:hover{
+    background-color: var(--color-primary-hover);
+    border-color: var(--color-primary-border);
+}
+  /* Contact section */
+  #contact h2,
+  #contact p {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact-links ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+  }
+  .contact-links ul :hover {
+    color: var(--color-primary-hover);
+  }
+  
+  .contact-links li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .contact-links a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  /* .text-center p{
+align-items: center;
+  } */
+
+  /* Media queries */
+  @media (max-width: 768px) {
+    .navbar-nav.ml-auto {
+      margin-top: 10px;
+    }
+  
+    .jumbotron {
+      padding: 20px;
+    }
+  
+    .card-overlay {
+      padding: 10px;
+    }
+  
+    .card-title {
+      font-size: 20px;
+    }
+  
+    .card-text {
+      font-size: 14px;
+    }
+  
+    .btn-primary {
+      font-size: 14px;
+    }
+  
+    #contact h2 {
+      margin-top: 40px;
+    }
+  }
+  
