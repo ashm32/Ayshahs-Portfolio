@@ -3,9 +3,9 @@
 /* Global styles */
 :root {
     /* Color Variables */
-    --color-primary: #b3a2bb;
-    --color-primary-hover: #bbdccf;
-    --color-primary-border: #baa891;
+    --color-primary: #636064;
+    --color-primary-hover: #727a77;
+    --color-primary-border: #32302d;
     --color-text: #333;
     --color-bg: #f8f9fa;
     --color-overlay: rgba(0, 0, 0, 0.7);
@@ -164,11 +164,9 @@
     color: var(--color-text);
     text-decoration: none;
   }
-
   /* .text-center p{
 align-items: center;
   } */
-
   /* Media queries */
   @media (max-width: 768px) {
     .navbar-nav.ml-auto {
@@ -200,3 +198,29 @@ align-items: center;
     }
   }
   
+
+  .skill-main-title {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+.skill {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.skill-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.skill-description {
+  color: #666;
+}
